@@ -1,0 +1,117 @@
+html{
+    box-sizing: border-box;
+}
+h2,h4{
+    margin: 0;
+    padding-bottom: 15px;
+}
+p{
+    margin: 0;
+}
+html,body{
+    font-family: "Karla", serif;
+    font-size: 16px;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+.blue-text{
+    color:hsl(179, 62%, 43%);;
+}
+.green-text{
+    color: hsl(71, 73%, 54%);
+}
+.white-text{
+    color: white;
+}
+.gray-text{
+    color: hsl(218, 22%, 67%)
+}
+.light-gray-text{
+    color: hsl(204, 43%, 93%)
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    width: 700px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+.top-section{
+    padding: 40px;
+    width: 100%;
+    height: 40%;
+}
+.bottom-section{
+    display: flex;
+    width: 100%;
+    height: 60%;
+
+}
+.bottom-left-section{
+    padding: 40px;
+    background-color: hsl(179, 62%, 43%);
+    flex: 50%;
+    width: 50%;
+    height: 100%;
+}
+.bottom-left-section p{
+    margin-top: 15px;
+}
+.bottom-right-section{
+    padding: 40px;
+    background-color: hsla(179, 57%, 44%, 0.733);
+    flex: 50%;
+    width: 50%;
+    height: 100%;
+}
+.dollar{
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+}
+.per-month{
+    font-size: 1rem;
+    font-weight: 500;
+    color: hsl(203, 93%, 83%);
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+button{
+    width: 100%;
+    height: 50px;
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    margin-top: 60px;
+}
+button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+@media screen and (max-width: 375px){
+    .card{
+        width: 100%;
+        height: 100%;
+    }
+    .bottom-section{
+        flex-direction: column;
+    }
+    .bottom-left-section{
+        flex: 100%;
+        width: 100%;
+    }
+    .bottom-right-section{
+        flex: 100%;
+        width: 100%;
+    }
+}
